@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rock-paper-scissors</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body><video autoplay muted loop id="background-video">
-    <source src="./videos/bckvdo.mp4" type="video/mp4">
-</video>
-    <h1> Rock Paper Scissors</h1>
-    <div class="class">
-        <div class="choices">
-            <div class="choice" id="rock">
-                 <img src="./images/rock.png" alt="">
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./videos/bckvdo.mp4" type="video/mp4">
+    </video>
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        <section class="game-container">
+            <div class="choices">
+                <div class="choice" id="rock">
+                    <img src="./images/rock.png" alt="Rock">
                 </div>
                 <div class="choice" id="paper">
-                    <img src="./images/paper.png" alt="">
-                   </div>
-                   <div class="choice" id="scissors">
-                    <img src="./images/scissors.png" alt="">
-                   </div>
-        </div>
-
-
-        <div class="score-board">
-            <div class=" score">
-                <p id="user-score">0</p>
-                <p>You</p>
+                    <img src="./images/paper.png" alt="Paper">
+                </div>
+                <div class="choice" id="scissors">
+                    <img src="./images/scissors.png" alt="Scissors">
+                </div>
             </div>
-            <div class="score">
-                <p id="comp-score">0</p>
-                <p>Comp</p>
+            <div class="score-board">
+                <div class="score">
+                    <p id="user-score">0</p>
+                    <p>You</p>
+                </div>
+                <div class="score">
+                    <p id="comp-score">0</p>
+                    <p>Comp</p>
+                </div>
             </div>
-        </div>
-        <div class="msg-container">
-            <p id="msg"> Play your move</p>
-        </div>
-        <script src="app.js"></script>
-    
+            <div class="msg-container">
+                <p id="msg">Play your move</p>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
